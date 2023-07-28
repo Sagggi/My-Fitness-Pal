@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>WORKout Buddy Intro</title>
+        <style>
+            body {
+                text-align: "center";
+                background-image: url("static/intro_bg.jpg");
+                background-repeat: no-repeat;
+                background-size: 1536px 760px;
+            }
+            h1 {
+                text-align: center;
+                color: rgb(168, 60, 192);
+                font-size: 2.2em;
+            }
+            h2 {
+                text-align: center;
+                color: white;
+                font-size: 1.7em;
+            }
+            p {
+                text-align: center;
+                color:rgb(168, 60, 192);
+                font-size: 1.4em;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Hiya {{username}}, I am your very own WORKout Buddy</h1>
+        <h2>I am here to help you achieve your body goals....... by giving you a miracle cure!!!</h2>
+        <p>Take a look at this {{username}}, if someone tells you they have an amazing drug that reduces your risk of major illnesses<br>
+            like coronary heart disease, stroke, type 2 diabetes, cancer etc. basically lowering your risk of early death by upto 30%.</p>
+        <p style="color: white;">It is easy to take, has an immediate effect with no side effects, you don't need to consult a doctor for it and best of all........ </p>
+        <p style="color: tomato;">IT IS FREEEEEE</p>
+        <p style="color: white;">Yes, you read that right..... free. Guess what it is {{username}}. The miracle cure I am talking about is 'EXERCISE'</p>
+        <div style="text-align: center; font-size: large;">
+            <a href="https://www.healthline.com/nutrition/10-benefits-of-exercise">10 Benefits of Exercise----Healthline.com</a><br>
+            <a href="https://www.mayoclinic.org/healthy-lifestyle/fitness/in-depth/exercise/art-20048389">7 Benefits of Regular Physical Activity----Mayoclinic.org</a><br>
+            <a href="https://medlineplus.gov/benefitsofexercise.html">Benefits of Exercise----MedlinePlus.gov</a><br>
+        </div>    
+        <h2>So {{username}}, hope you're convinced</h2>
+        <p>Click the button below to dive right in</p>
+        <form action="{{url_for('input_info_page')}}" method="POST">
+            <div style="text-align: center;">
+                <button type="submit">GENERATE MY EXERCISE ROUTINE</button>
+            </div>
+        </form>
+    </body>
+</html>

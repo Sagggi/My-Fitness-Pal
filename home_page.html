@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>WORKout Buddy Home</title>
+        <style>
+            body {
+                text-align: "center";
+                background-image: url("static/home_bg.jpg");
+                background-repeat: no-repeat;
+                background-size: 1536px 760px;
+            }
+            h1 {
+                text-align: center;
+                color: red;
+                font-size: 4em;
+            }
+            h2 {
+                text-align: center;
+                color: mediumblue;
+                font-size: 1.7em;
+            }
+            h3 {
+                text-align: center;
+                color: mediumblue;
+                font-size: 1.4em;
+            }
+            h4 {
+                text-align: center;
+                color: black;
+                font-size: 1.4em;
+            }
+            p {
+                text-align: center;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 title="A helful guide to achive your body goals">My WORKout Buddy</h1>
+        <div style="text-align: center;">
+            <img src="static/barbell.jpg" alt="Barbell" style="width: 384px; height: 150px;">
+        </div>
+        <br>
+        <h2>Welcome to My WORKout Buddy where we help you achieve all your body goals</h2>
+        <h3>Your WORKout Buddy will help you with not just exercise recommendation but also with calorie goals</h3><br>
+        <h4>Please enter your name here so that we can assist you personally</h4><br>
+        <form action="{{url_for('intro_page')}}" method="POST">
+            <div style="text-align: center;">
+                <label for="name" style="color: black; font-size: 1.2em ;"><b>Name:</b></label>
+                <input type="text" id="name" name="Name">
+                <button type="submit">Enter</button><br>
+            </div>
+        </form>
+    </body>
+</html>

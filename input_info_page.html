@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>WORKout Buddy Questionnaire</title>
+        <style>
+            body {
+                background-image: url("static/input_info_bg.jpg");
+                background-repeat: no-repeat;
+                background-size: 1536px 760px;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2.5em;
+                color: white;
+            }
+        </style>
+    </head>
+    <body style="background-color: black;">
+        <br>
+        <div style="text-align: center;">
+            <img src="static/WORKout_buddy.jpg" alt="WORKout Buddy" style="width: 215px; height: 200px">
+        </div>
+        <h1>Don't you think that buddies know each other well?? &#128521</h1>
+        <h1>Help me help you better</h1>
+        <form action="{{url_for('final_page')}}" method="POST">
+            <div style="text-align: center; font-size: 1.7em; color: white;">
+
+                <label for="weight"><b>Weight:</b></label>
+                <input style="height: 20px; font-size: 15px;" type="text" id="weight" name="weight"><br>
+                
+                <label for="height"><b>Height:</b></label>
+                <input style="height: 20px; font-size: 15px;" type="text" id="height" name="height"><br>
+                
+                <label for="age"><b>__Age:</b></label>
+                <input style="height: 20px; font-size: 15px;" type="text" id="age" name="age"><br><br>
+                
+                <label for="sex"><b>What is your gender?? </b></label><br>
+
+                <input type="radio" id="male" name="sex" value="male">
+                <label for="male">Male &#9794</label><br>
+
+                <input type="radio" id="female" name="sex" value="female">
+                <label for="female">Female &#9792</label><br>
+
+                <label for="activeness"><b>How are your activeness levels?? &#129300</b></label><br>
+
+                <input type="radio" id="sedentary" name="activeness" value="sedentary">
+                <label for="sedentary">Sedentary</label><br>
+
+                <input type="radio" id="less active" name="activeness" value="lessactive">
+                <label for="less active">Less Active</label>
+
+                <input type="radio" id="active" name="activeness" value="active">
+                <label for="active">Active</label><br><br>
+
+                <label for="goal"><b>Your goal bud?? &#128512</b></label><br>
+
+                <input type="radio" id="fitness" name="goal" value="fitness">
+                <label for="fitness">Fitness</label><br>
+
+                <input type="radio" id="weight loss" name="goal" value="weightloss">
+                <label for="weight loss">Weight Loss</label>
+
+                <input type="radio" id="bulking" name="goal" value="bulking">
+                <label for="bulking">Bulking</label><br><br>
+
+                <label for="mode"><b>Choose your mode buddy!! &#128127</b></label><br>
+
+                <input type="radio" id="gym workout" name="mode" value="gym">
+                <label for="gym workout">Gym Workout</label><br>
+                
+                <input type="radio" id="home workout" name="mode" value="home">
+                <label for="home workout">Home Workout</label><br><br>
+
+                <button style="height: 30px; font-size: 25px;" type="submit">Submit info</button>
+            </div>
+        </form>
+    </body>
+</html>

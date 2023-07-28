@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>WORKout Buddy's Exercise Routine</title>
+        <style>
+            body {
+                background-image: url("static/final_page.jpg");
+                background-repeat: no-repeat;
+                background-size: 478px 850px;
+                background-color: black;
+                background-position-x: center;
+            }
+            h1 {
+                text-align: center;
+                font-size: 2.5em;
+                color: white;
+            }
+            h2 {
+                text-align: left;
+                font-size: 1.6em;
+                color: white;
+            }
+            h3 {
+                text-align: left;
+                font-size: 1.4em;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <h1><b>🔥🔥BEAST MODE ON BUDDY!!!!🔥🔥</b></h1><br>
+        <h2>So, here is your expertly designed exercise routine courtesy of your very own WORKout Buddy:</h2>
+        <h3>If you had chosen gym workout, choose to do any 6 of the following workouts on each day</h3>
+        {% for i in workout %}
+            <span style="color: white; font-size: 1.1em;"> {{i}}<br> </span>
+        {% endfor %}
+        <h2>The calorie intake you need based on your body's needs is {{calorie}}</h2>
+    </body>
+</html>
